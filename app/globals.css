@@ -1,3 +1,5 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,11 +13,33 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --red: #f70d28;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+.menu-items {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.text-10m {
+  font-size: 10px;
+}
+.text-15m {
+  font-size: 15px;
+}
+.text-11m {
+  font-size: 13px;
+}
+
+.w-99 {
+  width: 700px;
 }

@@ -11,7 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customGray: "rgba(83, 88, 92, 0.1)",
       },
+     
     },
   },
   plugins: [],

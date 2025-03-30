@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import "../../globals.css";
+ 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +19,9 @@ type ExtendedMetadata = Metadata & {
 
 export const metadata: ExtendedMetadata = {
   title: "tooExclusive.com | #1 Nigerian Music and Entertainment Website",
-  description:
-    "Nigerian Music and Entertainment site TooExclusive.com provides Nigerian Songs, Entertainment news &amp; Videos of your favorite Artists in 2024",
-  authors: [{ name: "TooExclusive" }],
-  robots:
-    "follow, index, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  description: "Nigerian Music and Entertainment site TooExclusive.com provides Nigerian Songs, Entertainment news &amp; Videos of your favorite Artists in 2024",
+  authors: [{name:"TooExclusive"}],
+  robots: "follow, index, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
 };
 
 export default function RootLayout({
@@ -35,11 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Header />
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        <Footer />
       </body>
     </html>
   );
